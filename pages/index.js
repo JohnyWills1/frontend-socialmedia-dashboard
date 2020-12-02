@@ -1,65 +1,36 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from 'next/head';
+import styles from '../styles/Home.module.css';
 
 export default function Home() {
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+	return (
+		<div className={styles.container}>
+			<Head>
+				<title>Social Media Dashboard</title>
+				<link rel='icon' href='/favicon.ico' />
+			</Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
+			<main className={styles.main}>
+				<div className={styles.topBar}>
+					<div className={styles.titleButtonBar}>
+						<div className={styles.titleDesc}>
+							<div className={styles.title}>Social Media Dashboard</div>
+							<div className={styles.description}>Total Followers: 23,004</div>
+						</div>
+						<div className={styles.themeSwitch}>Dark Mode</div>
+					</div>
+					{/* <div className={styles.tiles}>
+						<div className={styles.fbTile}>Facebook</div>
+						<div className={styles.twitTile}>Twitter</div>
+						<div className={styles.instaTile}>Instagram</div>
+						<div className={styles.ytTile}>YouTube</div>
+					</div> */}
+				</div>
+				@nathanf 1987 Followers 12 Today @nathanf 1044 Followers 99 Today
+				@realnathanf 11k Followers 1099 Today Nathan F. 8239 Subscribers 144 Today
+				Overview - Today Page Views 87 3% Likes 52 2% Likes 5462 2257% Profile Views
+				52k 1375% Retweets 117 303% Likes 507 553% Likes 107 19% Total Views 1407
+				12%
+			</main>
+		</div>
+	);
 }
