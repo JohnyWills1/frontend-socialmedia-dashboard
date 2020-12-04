@@ -10,33 +10,55 @@
   sans-serif;
 }
 
-.main {
+.mainD {
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: hsl(227, 16%, 11%);
+}
+
+.mainL {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.topBarD {
+  background-color: hsl(232, 19%, 15%);
+  height: 25vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  position: relative;
   color: hsl(0, 0%, 100%);
 }
 
-.topBar {
-  background-color: hsl(232, 19%, 15%);
-  height: 200px;
-  width: 1440px;
+.topBarL {
+  background-color: hsl(225, 100%, 98%);
+  height: 25vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
+  position: relative;
+  color: hsl(230, 17%, 14%);
 }
 
 .titleButtonBar {
   display: flex;
+  height: fit-content;
   width: 80%;
   justify-content: space-between;
+  align-items: center;
   padding-top: 30px;
 }
 
 .titleDesc {
   display: flex;
   flex-direction: column;
+  height: fit-content;
 }
 
 .title {
@@ -46,6 +68,125 @@
 
 .description {
   opacity: 0.6;
+}
+
+.themeSwitch {
+  height: fit-content;
+  display: flex;
+  align-items: center;
+}
+
+.themeText {
+  padding-right: 20px;
+}
+
+.themeButton {
+  background: linear-gradient(75deg, hsl(210, 78%, 56%),hsl(146, 68%, 55%));
+  border: none;
+  border-radius: 50px;
+  height: 30px;
+  width: 60px;
+  outline: none;
+  position: relative;
+}
+
+.switchIconD {
+  position: absolute;
+  background-color: hsl(228, 28%, 20%);
+  border-radius: 9999px;
+  height: 22px;
+  width: 22px;
+  bottom: 4px;
+  left: 5px;
+}
+
+.switchIconL {
+  position: absolute;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 9999px;
+  height: 22px;
+  width: 22px;
+  bottom: 4px;
+  left: 34px;
+}
+
+.tiles {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+  width: 80%;
+}
+
+.tileD {
+  background-color: hsl(228, 28%, 20%);
+  height: 240px;
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 25px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.tileL {
+  background-color: hsl(227, 47%, 96%);
+  height: 240px;
+  width: 270px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 25px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.fbColorBar {
+  background: #385898;
+  height: 5px;
+  width: inherit;
+}
+
+.twitColorBar {
+  background: #1DA1F2;
+  height: 5px;
+  width: inherit;
+}
+
+.instaColorBar {
+  background: linear-gradient(90deg, #F58529, #FEDA77, #DD2A7B, #8134AF, #515BD4);
+  height: 5px;
+  width: inherit;
+}
+
+.ytColorBar {
+  background: #FF0000;
+  height: 5px;
+  width: inherit;
+}
+
+.ytTileL {
+  background-color: hsl(227, 47%, 96%);
+  height: 240px;
+  width: 270px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.ytTileD {
+  background-color: hsl(228, 28%, 20%);
+  height: 240px;
+  width: 270px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 6px;
 }
 
 /* - Very Dark Blue (BG): hsl(230, 17%, 14%) 
